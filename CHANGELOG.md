@@ -1,5 +1,9 @@
 # Changelog
 
+## v4.9.0.post1+xswbackport
+
+ - Fix XML Signature Wrapping (XSW) vulnerabilities - CVE-2020-5390
+
 ## 4.9.0 (2019-11-03)
 
 - Add mdstore methods to extract mdui uiinfo elements
