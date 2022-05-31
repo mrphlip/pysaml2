@@ -9,7 +9,6 @@ import logging
 import os
 
 import importlib
-import dbm
 import shelve
 import six
 import threading
@@ -63,15 +62,7 @@ AUTHN_DICT_MAP = {
 
 
 def _shelve_compat(name, *args, **kwargs):
-    try:
-        return shelve.open(name, *args, **kwargs)
-    except dbm.error[0]:
-        # Python 3 whichdb needs to try .db to determine type
-        if name.endswith('.db'):
-            name = name.rsplit('.db', 1)[0]
-            return shelve.open(name, *args, **kwargs)
-        else:
-            raise
+    return shelve.open(name, *args, **kwargs)
 
 
 class Server(Entity):
