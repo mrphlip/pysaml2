@@ -1,8 +1,12 @@
 # Changelog
 
-## v4.9.0.post1+xswbackport
+## 4.9.0.post2+backport
 
- - Fix XML Signature Wrapping (XSW) vulnerabilities - CVE-2020-5390
+ - fix xmlsec1 --id-attr configuration option value (backport from 5.1.0)
+
+## 4.9.0.post1+xswbackport
+
+ - Fix XML Signature Wrapping (XSW) vulnerabilities - CVE-2020-5390 (backport from 5.0.0)
 
 ## 4.9.0 (2019-11-03)
 
